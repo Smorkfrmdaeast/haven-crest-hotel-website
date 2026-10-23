@@ -1,0 +1,16 @@
+{
+  "name": "Haven Crest Hotel & Suites, Enugu",
+  "short_name": "Haven Crest",
+  "description": "Luxury five-star hotel & suites located in Enugu, Nigeria.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C1C1E",
+  "theme_color": "#1C1C1E",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

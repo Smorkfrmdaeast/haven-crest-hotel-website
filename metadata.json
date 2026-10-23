@@ -1,0 +1,6 @@
+{
+  "name": "Haven Crest Hotel & Suites, Enugu",
+  "description": "Luxury five-star boutique hotel and suites in Independence Layout, Enugu, Nigeria. Elegant accommodation, fine dining, spa, and event spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1C1C1E;
+  --color-deep-charcoal: #121214;
+  --color-warm-cream: #F7F2E9;
+  --color-champagne-gold: #C9A96E;
+  --color-gold-hover: #D8BD85;
+  --color-gold-dim: #9E814B;
+  --color-soft-stone: #E8E0D2;
+  --color-muted-text: #6B665E;
+  --color-muted-light: #A39D93;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom base typography & scrollbar */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-charcoal);
+  color: var(--color-warm-cream);
+  overflow-x: hidden;
+}
+
+/* Smooth luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D2D32;
+  border-radius: 4px;
+  border: 2px solid #121214;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A96E;
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #C9A96E !important;
+  outline-offset: 3px !important;
+}
+
+/* Luxury hairline border helper */
+.hairline-gold {
+  border-color: rgba(201, 169, 110, 0.22);
+}
+
+.hairline-gold-strong {
+  border-color: rgba(201, 169, 110, 0.45);
+}
+
+/* Subtly animated gradient shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(201,169,110,0.08) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
